@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BMKG | Badan Meteorologi, Klimatologi, dan Geofisika </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/cuaca/logo.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center" style="background-color: darkblue; height: 7rem;">
+    <div class="container d-flex justify-content-center justify-content-md-between text-black">
+      <p> Hari: <span id="tanggalwaktu"></span></p>
+      <!-- <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+      </div> -->
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://twitter.com/infoBMKG" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/InfoBMKG" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/infobmkg/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="http://youtube.com/infobmkg" class="youtube" target="_blank"><i class="bi bi-youtube"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="../index.html"> <img src="../assets/img/cuaca/logo.png" alt=""></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <div id="navbar" class="navbar">
+        <ul>
+          <li><a href="../index.html">Meteorologi</a></li>
+          <li class="dropdown "><a  href="#"><span >Perkiraan Cuaca DIY</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="../cuaca_diy/hari_ini.html" ><span>Hari Ini</span></a>
+              <li class="dropdown"><a href="../cuaca_diy/esok_hari.html" ><span>Esok Hari</span></a>
+              <li class="dropdown"><a href="../cuaca_diy/lusa.html" ><span>Lusa</span></a>
+              <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca-mingguan.bmkg" target="blank"><span>Prospek Cuaca Mingguan</span></a>
+              <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kec=Pakem&kab=Kab._Sleman&Prov=DI_Yogyakarta&AreaID=5008064" target="_blank"><span>Cuaca Lereng Merapi</span></a>
+              <li class="dropdown"><a href=""><span>Cuaca Wisata</span> <i class="bi bi-chevron-right"></i></a>
+               <ul>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Sleman&AreaID=501187&Prov=6" target="_blank"> Sleman</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Yogyakarta&AreaID=501190&Prov=35" target="_blank">Kota Yogyakarta</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Gunung%20Kidul&AreaID=501189&Prov=6" target="_blank">Gunung Kidul</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Bantul&AreaID=501186&Prov=6" target="_blank">Bantul</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Wates&AreaID=501188&Prov=6" target="_blank">Kulon Progo</a></li>
+                    </ul>
+              <li class="dropdown"><a href="../cuaca_diy/radar.html" ><span>Citra Radar DIY</span></a>
+              <li class="dropdown"><a href="../cuaca_diy/Satelit.html"><span>Citra Satelit DIY</span></a>
+              <li class="dropdown"><a href="../cuaca_diy/Tropis.html"><span>Siklon Tropis</span></a>
+              <li class="dropdown"><a href="cuaca_diy/forcase.html"><span>Prakiraan Cuaca Impact Based Forecast</span></a>
+              <li class="dropdown"><a href="../cuaca_diy/prakiraan_angin.html" ><span>Prakiraan Angin 3000 Feet 24 Jam Kedepan</span></a>
+                <li class="dropdown"><a href="#"><span>Prakiraan Curah Hujan</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="https://stamet.yogya.bmkg.go.id/cuaca/prediksi-curah-hujan/" target="_blank">Prakiraan Curah Hujan 6 jam</a></li>
+                    <li><a href="https://stamet.yogya.bmkg.go.id/cuaca/prediksi-curah-hujan/" target="_blank">Prakiraan Curah Hujan Harian</a></li>
+                  </ul>
+                  <li class="dropdown"><a href="#"><span>Analysis Model</span><i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                  <li><a href="#">Streamline</a></li>
+                  <li class="dropdown"><a href="#"><span>Indeks Labilitas </span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">K Index</a></li>
+                      <li><a href="#">Lifted Index</a></li>
+                      <li><a href="#">Showalter Index</a></li>
+                    </ul>
+                  <li><a href="#">MJO</a></li>
+                  <li><a href="#">ENSO</a></li>
+                  <li><a href="#">IOD</a></li>
+                  <li><a href="#">Indeks Monsoon</a></li>
+                  <li><a href="#">Gelombang Equator</a></li>
+                </ul>
+              </li>
+            </ul>
+            <li class="dropdown"><a class="nav-link scrollto active" href="#"><span>Peringatan Dini Cuaca</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Peringatan Dini Cuaca 6 Jaman</span></a>
+                <li class="dropdown"><a href="#"><span>Peringatan Dini Cuaca 3 Harian</span></a>
+                <li class="dropdown"><a class="nav-link scrollto active" href="gelombang.html"><span>Peringatan Dini Gelombang Tinggi</span></a>
+                <li class="dropdown"><a href="#"><span>Aerodrome Warning</span></a>
+                <li class="dropdown"><a href="#"><span>Windshear Warning</span></a>
+
+                </ul>
+            <li class="dropdown"><a href="#"><span>Prakiraan Cuaca Maritim</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="https://maritim.bmkg.go.id/?fromURL=www.bmkg.go.id" target="_blank"><span>Prakiraan Tinggi Gelombang</span></a>
+                <li class="dropdown"><a href="https://maritim.bmkg.go.id/?fromURL=www.bmkg.go.id" target="_blank"><span>Prakiraan Tinggi Gelombang Perairan</span></a>
+                <li class="dropdown"><a href="https://maritim.bmkg.go.id/?fromURL=www.bmkg.go.id" target="_blank"><span>Prakiraan Arah dan Kecepatan Arus Laut</span></a>
+              </ul>
+            <li class="dropdown"><a href="#"><span>Pelayanan Cuaca Penerbangan</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="http://aviation.bmkg.go.id/web/metar_speci.php#" target="_blank"><span>Metar / Speci</span></a>
+                <li class="dropdown"><a href="http://aviation.bmkg.go.id/web/taf.php" target="_blank"><span>Tafor</span></a>
+                <li class="dropdown"><a href="#"><span>Arfor</span></a>
+                <li class="dropdown"><a href="http://aviation.bmkg.go.id/web/va.php" target="_blank"><span>Volcanic Ash</span>  <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="http://aviation.bmkg.go.id/web/va.php" target="_blank">Volcanic Ash Advisory</a></li>
+                    <li><a href="#">VONA</a></li>
+                  </ul>
+                <li class="dropdown"><a href="#"><span>Chart</span>  <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/penerbangan/significant-weather/" target="_blank"><span>Indeks Labilitas </span> <i class="bi bi-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="http://aviation.bmkg.go.id/web/sigwx_high_level_full.php" target="_blank">High Level SIGWX</a></li>
+                        <li><a href="http://aviation.bmkg.go.id/web/sigwx_medium_level.php" target="_blank">Medium Level SIGWX</a></li>
+                      </ul>
+                    <li><a href="../bandara/temp.html">Wind/Temp</a></li>
+                  </ul>
+                <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/fdocs/" target="_blank"><span>Flightdocs Service</span> </a>
+                </ul>
+            <!-- <li class="dropdown"><a href="#"><span>Publikasi</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Press Release Info Cuaca</span></a>
+                <li class="dropdown"><a href="#"><span>Analisa Kejadian Cuaca Ekstrem</span></a>
+                <li class="dropdown"><a href="#"><span>Artikel</span></a>
+                <li class="dropdown"><a href="#"><span>Buletin</span></a>
+                <li class="dropdown"><a href="#"><span>Galeri Kegiatan</span></a>
+                </ul>
+          </li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= card Services Section ======= -->
+    <section id="tropis">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 mx-5">
+        <div class="title-section">
+          <h3 class="nav-tabs" style="color:blue;">Peringatan Dini Gelombang Tinggi</h3>
+                  </div>
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col-lg-7">
+                  
+                    <h4 style="width: 500px;">Peringatan Dini Gelombang Tinggi</h4>
+                    <p style="text-align: justify; width: 700px;">
+                      Peringatan dini gelombang tinggi merupakan informasi prakiraan gelombang untuk 2 hari ke depan yang akan diinformasikan 
+                      jika terjadi gelombang tinggi lebih dari 1.25 meter dan bertahan selama 12 jam ke depan di sekitar perairan Indonesia 
+                      dan berlaku maksimal 2 hari sejak dikeluarkan dan diperbaharui setiap ada perubahan dan sebelum masa berlakunya habis.
+                    </p>
+                    <iframe src="https://cdn.bmkg.go.id/DataMKG/MEWS/dokumen/peringatan-dini-gelombang-tinggi.pdf" style="width: 200%; height: 1200px;">
+                    </iframe>    
+                </div>    
+              </div>                
+          </div>
+          <div class="col-lg-4 mx-5">
+        <div class="title-section">
+          <h4 class="nav-tabs" style="color:blue;margin-left: 50px;">Informasi Gelombang</h4>
+                  </div>
+                  <div class="row row-cols-1 row-cols-md-3 g-4 shadow-lg">
+                  <div class="col-lg-4 mx-5">
+                    <div class="row">
+                      <div class="col-7">
+                          <img src="https://cdn.bmkg.go.id/Web/Sukabumi-Eq-250x150.jpg" width="500%">
+                      </div>
+                      <div class="col-7">
+                        <br>
+                          <p style="font-size: 14px; width: 300px;">Peta Isoseismal Gempabumi Sukabumi, Jawa Barat 27 April
+                              2021</p>
+                          <p style="font-size: 12px; ">27 Apr 2021</p>
+                      </div>
+                      <i class="bi bi-tags-fill"><a href="" style="font-size: 14px;font-style:normal;">
+                              #Gempabumi #Peta
+                              Isoseismal</a></i>
+  
+                  </div>
+                  <hr>
+                  <div class="row shadow-lg">
+                      <div class="col-7">
+                          <img src="https://cdn.bmkg.go.id/Web/Sukabumi-Eq-250x150.jpg" width="500%">
+                      </div>
+                      <div class="col-7">
+                        <br>
+                          <p style="font-size: 14px; width: 300px;">Peta Isoseismal Gempabumi Sukabumi, Jawa Barat 27 April
+                              2021</p>
+                          <p style="font-size: 12px; ">27 Apr 2021</p>
+                      </div>
+                      <i class="bi bi-tags-fill"><a href="" style="font-size: 14px;font-style:normal;">
+                              #Gempabumi #Peta
+                              Isoseismal</a></i>
+  
+                  </div>
+                  <hr>
+                  <div class="row shadow-lg">
+                      <div class="col-7">
+                          <img src="https://cdn.bmkg.go.id/Web/Sukabumi-Eq-250x150.jpg" width="500%">
+                      </div>
+                      <div class="col-7">
+                          <p style="font-size: 14px; width: 300px;">Peta Isoseismal Gempabumi Sukabumi, Jawa Barat 27 April
+                              2021</p>
+                          <p style="font-size: 12px; ">27 Apr 2021</p>
+                      </div>
+                      <i class="bi bi-tags-fill"><a href="" style="font-size: 14px;font-style:normal;">
+                              #Gempabumi #Peta
+                              Isoseismal</a></i>
+  
+                  </div>
+                </div>    
+              </div>   
+            </div>
+          
+          </div>
+        </div>
+
+  </section>
+  </main><!-- End #main -->
+  <br>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="background-color:black">
+
+    <div class="footer-top " style="background-color: black;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-9 footer-contact">
+            <h3 class="text-white">BMKG</h3>
+            <p class="text-white">
+              Jalan Raya Wates Km.42 Bandara Internasional Yogyakarta <br>
+              Kulon Progo - D.I. Yogyakarta<br>
+              55282 <br><br>
+              <strong>Phone:</strong> +62 811 738 801<br>
+              <strong>Email:</strong>  <a href="mailto:stamet.yogya@bmkg.go.id">stamet.yogya@bmkg.go.id</a><br>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-9 footer-links">
+            <h4 class="text-white">Link BMKG</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Meteorologi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Perkiraan Cuaca DIY</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Peringatan Dini Cuaca</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Prakiraan Cuaca Maritim</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pelayanan Cuaca Penerbangan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-9 footer-links">
+              <h3 class="text-white">Aplikasi Mobile</h3>
+              <h4>
+              <a class="text-white" href="http://apps.bmkg.go.id/" style="font-size: 20px;" rel="noopener">
+              Info BMKG - Cuaca, Iklim, dan Gempabumi Indonesia</a></h4>
+              <p class="text-white" style="font-size: 15pxx;">
+                Semua informasi mengenai Prakiraan Cuaca, Iklim, Kualitas Udara, dan 
+                Gempabumi yang terjadi di berbagai wilayah di Indonesia tercakup dalam satu aplikasi mobile.
+              </p>
+              <div class="row">
+                <div class="col-xs-6">
+                  <a href="https://itunes.apple.com/id/app/id1114372539?l=id" target="_blank">
+                  <img src="https://www.bmkg.go.id/asset/img/logo/appstore.png" alt="infoBMKG on App Store" 
+                  class="ic-fade-in" style="width: 30%; height: 40px;">
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.Info_BMKG" target="_blank">
+                    <img src="https://www.bmkg.go.id/asset/img/logo/googleplay.png" alt="infoBMKG on Google Play" 
+                    class="ic-fade-in" style="width: 30%; height: 40px;">
+                    </a>
+                </div>
+                <br>
+              </div>
+              <br>
+            <div class="social-links">
+              <a style="background-color: coral;" href="https://twitter.com/infoBMKG" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+              <a style="background-color: coral;" href="https://www.facebook.com/InfoBMKG" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a style="background-color: coral;" href="https://www.instagram.com/infobmkg/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+              <a style="background-color: coral;" href="http://youtube.com/infobmkg" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright text-white">
+        &copy; Copyright <strong><span> BMKG | Badan Meteorologi, Klimatologi, dan Geofisika 2021</span></strong>. All Rights Reserved
+      </div>
+      <!-- <div class="credits"> -->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div> -->
+    </div>
+ 
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+      <script src="../assets/js/jquery.js"></script>
+      <!-- Vendor JS Files -->
+      <script src="../assets/vendor/aos/aos.js"></script>
+      <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="../assets/vendor/php-email-form/validate.js"></script>
+      <script src="../assets/vendor/purecounter/purecounter.js"></script>
+      <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="../assets/js/main.js"></script>
+      <script>
+        $(document).ready(function(){
+          $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+          });
+        });
+        </script>
+      <script>
+        var tw = new Date();
+        if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+        else (a=tw.getTime());
+        tw.setTime(a);
+        var tahun= tw.getFullYear ();
+        var hari= tw.getDay ();
+        var bulan= tw.getMonth ();
+        var tanggal= tw.getDate ();
+        var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+        var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+        document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+        </script>
+    
+
+</body>
+
+</html>

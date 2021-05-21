@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BMKG | Badan Meteorologi, Klimatologi, dan Geofisika </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/cuaca/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizLand - v3.1.0
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center" style="background-color: rgb(12, 39, 243); height: 7rem;">
+    <div class="container d-flex justify-content-center justify-content-md-between text-black">
+      <p> Hari: <span id="tanggalwaktu"></span></p>
+      <!-- <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+      </div> -->
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://twitter.com/infoBMKG" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/InfoBMKG" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/infobmkg/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="http://youtube.com/infobmkg" class="youtube" target="_blank"><i class="bi bi-youtube"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"> <img src="assets/img/cuaca/logo.png" alt=""></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <div id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Meteorologi</a></li>
+          <li class="dropdown"><a href="#"><span>Perkiraan Cuaca DIY</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Yogyakarta&AreaID=501190&Prov=35" target="blank"><span>Hari Ini</span></a>
+              <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Yogyakarta&AreaID=501190&Prov=35" target="blank"><span>Esok Hari</span></a>
+              <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Yogyakarta&AreaID=501190&Prov=35" target="blank"><span>Lusa</span></a>
+              <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca-mingguan.bmkg" target="blank"><span>Prospek Cuaca Mingguan</span></a>
+              <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kec=Pakem&kab=Kab._Sleman&Prov=DI_Yogyakarta&AreaID=5008064" target="_blank"><span>Cuaca Lereng Merapi</span></a>
+              <li class="dropdown"><a href=""><span>Cuaca Wisata</span> <i class="bi bi-chevron-right"></i></a>
+               <ul>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Sleman&AreaID=501187&Prov=6" target="_blank"> Sleman</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Yogyakarta&AreaID=501190&Prov=35" target="_blank">Kota Yogyakarta</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Gunung%20Kidul&AreaID=501189&Prov=6" target="_blank">Gunung Kidul</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Bantul&AreaID=501186&Prov=6" target="_blank">Bantul</a></li>
+                      <li><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Kota=Wates&AreaID=501188&Prov=6" target="_blank">Kulon Progo</a></li>
+                    </ul>
+              <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/cuaca/citra-radar/" target="_blank"><span>Citra Radar DIY</span></a>
+              <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/cuaca/citra-satelit/" target="_blank"><span>Citra Satelit DIY</span></a>
+              <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/cuaca/siklon-tropis/" target="_blank"><span>Siklon Tropis</span></a>
+              <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/cuaca/impact-based-forecast/" target="_blank"><span>Prakiraan Cuaca Impact Based Forecast</span></a>
+              <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/cuaca/prakiraan-angin/" target="_blank"><span>Prakiraan Angin 3000 Feet 24 Jam Kedepan</span></a>
+                <li class="dropdown"><a href="#"><span>Prakiraan Curah Hujan</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="https://stamet.yogya.bmkg.go.id/cuaca/prediksi-curah-hujan/" target="_blank">Prakiraan Curah Hujan 6 jam</a></li>
+                    <li><a href="https://stamet.yogya.bmkg.go.id/cuaca/prediksi-curah-hujan/" target="_blank">Prakiraan Curah Hujan Harian</a></li>
+                  </ul>
+                  <li class="dropdown"><a href="#"><span>Analysis Model</span><i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                  <li><a href="#">Streamline</a></li>
+                  <li class="dropdown"><a href="#"><span>Indeks Labilitas </span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">K Index</a></li>
+                      <li><a href="#">Lifted Index</a></li>
+                      <li><a href="#">Showalter Index</a></li>
+                    </ul>
+                  <li><a href="#">MJO</a></li>
+                  <li><a href="#">ENSO</a></li>
+                  <li><a href="#">IOD</a></li>
+                  <li><a href="#">Indeks Monsoon</a></li>
+                  <li><a href="#">Gelombang Equator</a></li>
+                </ul>
+              </li>
+            </ul>
+            <li class="dropdown"><a href="#"><span>Peringatan Dini Cuaca</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Peringatan Dini Cuaca 6 Jaman</span></a>
+                <li class="dropdown"><a href="#"><span>Peringatan Dini Cuaca 3 Harian</span></a>
+                <li class="dropdown"><a href="#"><span>Peringatan Dini Gelombang Tinggi</span></a>
+                <li class="dropdown"><a href="#"><span>Aerodrome Warning</span></a>
+                <li class="dropdown"><a href="#"><span>Windshear Warning</span></a>
+
+                </ul>
+            <li class="dropdown"><a href="#"><span>Prakiraan Cuaca Maritim</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="https://www.bmkg.go.id/cuaca/peringatan-gelombang-tinggi.bmkg" target="_blank"><span>Prakiraan Tinggi Gelombang Harian</span></a>
+                <li class="dropdown"><a href="https://maritim.bmkg.go.id/prakiraan/prospek_mingguan" target="_blank"><span>Prakiraan Tinggi Gelombang Mingguan</span></a>
+                <li class="dropdown"><a href="https://maritim.bmkg.go.id/area/pelayanan?kode=H.06" target="_blank"><span>Prakiraan Arah dan Kecepatan Arus Laut</span></a>
+              </ul>
+            <li class="dropdown"><a href="#"><span>Pelayanan Cuaca Penerbangan</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="http://aviation.bmkg.go.id/web/metar_speci.php#" target="_blank"><span>Metar / Speci</span></a>
+                <li class="dropdown"><a href="http://aviation.bmkg.go.id/web/taf.php" target="_blank"><span>Tafor</span></a>
+                <li class="dropdown"><a href="#"><span>Arfor</span></a>
+                <li class="dropdown"><a href="http://aviation.bmkg.go.id/web/va.php" target="_blank"><span>Volcanic Ash</span>  <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="http://aviation.bmkg.go.id/web/va.php" target="_blank">Volcanic Ash Advisory</a></li>
+                    <li><a href="#">VONA</a></li>
+                  </ul>
+                <li class="dropdown"><a href="#"><span>Chart</span>  <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/penerbangan/significant-weather/" target="_blank"><span>Indeks Labilitas </span> <i class="bi bi-chevron-right"></i></a>
+                      <ul>
+                        <li><a href="http://aviation.bmkg.go.id/web/sigwx_high_level_full.php" target="_blank">High Level SIGWX</a></li>
+                        <li><a href="http://aviation.bmkg.go.id/web/sigwx_medium_level.php" target="_blank">Medium Level SIGWX</a></li>
+                      </ul>
+                    <li><a href="https://stamet.yogya.bmkg.go.id/penerbangan/wind-temp/" target="_blank">Wind/Temp</a></li>
+                  </ul>
+                <li class="dropdown"><a href="https://stamet.yogya.bmkg.go.id/fdocs/" target="_blank"><span>Flightdocs Service</span> </a>
+                </ul>
+            <!-- <li class="dropdown"><a href="#"><span>Publikasi</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Press Release Info Cuaca</span></a>
+                <li class="dropdown"><a href="#"><span>Analisa Kejadian Cuaca Ekstrem</span></a>
+                <li class="dropdown"><a href="#"><span>Artikel</span></a>
+                <li class="dropdown"><a href="#"><span>Buletin</span></a>
+                <li class="dropdown"><a href="#"><span>Galeri Kegiatan</span></a>
+                </ul>
+          </li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <!-- <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>BizLand</span></h1>
+      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+      </div>
+    </div>
+  </section>End Hero -->
+  <br>
+
+  <div class="alert alert-warning d-flex align-items-center" role="alert text-center">
+    <svg  xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 
+      0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg>
+  
+    <div class="container">
+      <span class=" text-center"> Kamis, 18 Februari 2021 </span>
+      <div class="section-tittle">
+        <p style="text-align:justify; font-size: 1rem;">
+            Peringatan Dini DI Yogyakarta Waspada curah hujan dengan intensitas lebat yang dapat disertai 
+            petir dan angin kencang terjadi di wilayah Sleman, Gunungkidul Timur, Bantul Timur dan Kulon Progo Utara serta potensi gelombang laut tinggi di Perairan DIY.
+          </p>
+        </div>
+    </div>
+    <br>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= card Services Section ======= -->
+    <hr style="height:2px;border:none;color:rgb(16, 75, 226);background-color:rgb(16, 75, 226) ;" />
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="title-section">
+          <h3 >Prakiraan Cuaca Hari Ini</h3>
+        </div>
+      </div>
+            <div class="container" data-aos="fade-up">
+            <div class="row">
+              <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <div class="owl-carousel"> -->
+                  <style>
+                    #my-div {
+                      width: 1200px;
+                      height: 300px;
+                      left: 2%;
+                      overflow: hidden;
+                      position: relative;
+                    }
+  
+                    #my-iframe {
+                      position: absolute;
+                      top: -400px;
+                      left: -50px;
+                      width: 1200px;
+                      height: 1000px;
+                    }
+                  </style>
+                  <div id="my-div">
+                    <iframe src="https://stamet.yogya.bmkg.go.id/" id="my-iframe" scrolling="no"></iframe>
+                  </div>
+  
+  
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section><!-- End card Services Section -->
+      <!-- Section Content berita -->
+
+    <section id="berita" class="berita"> 
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-9">
+          <div class="title-section">
+            <h3 class="nav-tabs">Berita</h3>
+        </div>
+        <!-- berita -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-lg-5">
+            <div class="card h-100 card-bg">
+              <img src="assets/img/berita/bmkg.jpeg">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text" style="text-align:justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Ipsam sit alias fugit amet molestiae recusandae error assumenda similique possimus voluptatem soluta, 
+                  neque nesciunt excepturi deserunt laborum vel consectetur iure. Vero.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end berita utama -->
+          <!-- berita kedua -->
+          
+          <div class="col-lg-7">
+          <div class="card-md-10">
+            <div class="row g-4">
+              <div class="col-lg-11">
+              <p style="text-align:justify; float: left;"> <img style="float: left; width: 30%; height: 9rem;" src="assets/img/berita/berita1.jpeg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Deleniti voluptas molestiae odit cupiditate? Sit velit libero ea quas numquam, veritatis eius, iste sequi iure explicabo, 
+                consequuntur dolore molestiae adipisci incidunt? <a href="#" class="card-link">Read More</a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="card-md-10">
+            <div class="row g-0">
+              <div class="col-lg-11">
+              <p style="text-align:justify; float: left;"> <img style="float: left; width: 30%; height: 9rem;" src="assets/img/berita/berita2.jpeg"> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Deleniti voluptas molestiae odit cupiditate? Sit velit libero ea quas numquam, veritatis eius, 
+                iste sequi iure explicabo, consequuntur dolore molestiae adipisci incidunt? <a href="#" class="card-link">Read More</a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="card-md-10">
+            <div class="row g-0">
+              <div class="col-lg-11">
+              <p style="text-align:justify; float: left;"> <img style="float: left; width: 30%; height: 9rem;" src="assets/img/berita/berita3.jpeg">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Deleniti voluptas molestiae odit cupiditate? Sit velit libero ea quas 
+                numquam, veritatis eius, iste sequi iure explicabo, consequuntur dolore molestiae adipisci incidunt? <a href="#" class="card-link">Read More</a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="card-md-10">
+            <div class="row g-0">
+              <div class="col-lg-11">
+              <p style="text-align:justify; float: left;"> <img style="float: left; width: 30%; height: 9rem;" src="assets/img/berita/berita4.jpeg">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Deleniti voluptas molestiae odit cupiditate? Sit velit libero ea quas numquam,
+                 veritatis eius, iste sequi iure explicabo, consequuntur dolore molestiae adipisci incidunt? <a href="#" class="card-link">Read More</a></p> 
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>  
+        <br>
+        </div>
+        <!-- end berita kedua -->
+        <!-- gempa bumi -->
+        <div class="col">
+          <div class="title-section">
+            <h3 class="nav-tabs">Gempa Bumi Terkini</h3>
+        </div>
+        <!-- <div class="card" style="width: 18rem;">
+          <img src="assets/img/cuaca/cerah berawan.png" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse reiciendis, aperiam officiis
+               sunt expedita adipisci, iure quos corporis at rem saepe sit laudantium blanditiis repellendus voluptate, vel minima voluptatibus. Corrupti!</p>
+          </div> -->
+          <div class="col">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/img/cuaca/gempa1.jpeg" width="120%">
+                        </div>
+                        <div class="col" style="font-size: 14px;">
+                            <span>08 Mei 2021, 18:29:32 WIB</span><br>
+                            <span><img src="assets/img/icon/magnitudo.png" width="20px">
+                                Magnitudo <br><span style="margin-left: 25px;">4.5</span></span><br>
+                            <span><img src="assets/img/icon/Depth.png" width="20px">
+                                Kedalaman <br><span style="margin-left: 25px;">35 km</span></span><br>
+                            <span><img src="assets/img/icon/pin.png" width="20px">
+                                Lokasi <br><span style="margin-left: 25px;">4.25 LS - 102.34
+                                    BT</span></span><br>
+                        </div>
+                        <span><img style="margin-left:10px;" src="assets/img/icon/Kota.png" width="20px" alt="">
+                            Pusat gempa berada di laut 32 km <span style="margin-left:35px ;">BaratDaya
+                                Selum</span></span>
+                        <span><img style="margin-left:10px;" src="assets/img/icon/Loc.png" width="20px" alt="">
+                            Dirasakan (Skala MMI): II - III Seluma, II-<span style="margin-left: 35px;">III
+                                Bengkulu, II Bengkulu Selatan,
+                                II Curup</span> </span>
+                    </div>
+                </div>
+            </div>
+              <!-- End Gempa Bumi-->
+              <!-- Informasi Gempa bummi -->
+            <div class="About-info mt-5">
+                <h5>Informasi Gempabumi</h5>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <img src="https://cdn.bmkg.go.id/Web/Sukabumi-Eq-250x150.jpg" width="100%">
+                    </div>
+                    <div class="col-7">
+                        <p style="font-size: 14px;">Peta Isoseismal Gempabumi Sukabumi, Jawa Barat 27 April
+                            2021</p>
+                        <p style="font-size: 12px; ">27 Apr 2021</p>
+                    </div>
+                    <i class="bi bi-tags-fill"><a href="" style="font-size: 14px;font-style:normal;">
+                            #Gempabumi #Peta
+                            Isoseismal</a></i>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <img src="https://cdn.bmkg.go.id/Web/Sukabumi-Eq-250x150.jpg" width="100%">
+                    </div>
+                    <div class="col-7">
+                        <p style="font-size: 14px;">Peta Isoseismal Gempabumi Sukabumi, Jawa Barat 27 April
+                            2021</p>
+                        <p style="font-size: 12px; ">27 Apr 2021</p>
+                    </div>
+                    <i class="bi bi-tags-fill"><a href="" style="font-size: 14px;font-style:normal;">
+                            #Gempabumi #Peta
+                            Isoseismal</a></i>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <img src="https://cdn.bmkg.go.id/Web/Sukabumi-Eq-250x150.jpg" width="100%">
+                    </div>
+                    <div class="col-7">
+                        <p style="font-size: 14px;">Peta Isoseismal Gempabumi Sukabumi, Jawa Barat 27 April
+                            2021</p>
+                        <p style="font-size: 12px; ">27 Apr 2021</p>
+                    </div>
+                    <i class="bi bi-tags-fill"><a href="" style="font-size: 14px;font-style:normal;">
+                            #Gempabumi #Peta
+                            Isoseismal</a></i>
+
+                </div>
+                  <hr>
+            </div>
+            <!-- End Gempa Bumi -->
+        </div>
+        </div>
+        <!-- Informasi Keseluruhan Cuaca -->
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col">
+          <div class="title-section">
+            <h3 class="nav-tabs">Informasi Cuaca Keseluruhan</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-lg-3">
+            <h6 style="color: blue;">Citra Setelit</h6>
+            <hr>
+            <div class="card">
+              <a href="https://inderaja.bmkg.go.id/IMAGE/HIMA/H08_EH_Indonesia.png?id=153017ub8jnmbiacu7mejs1" 
+              title="Citra Setelit" class="fancybox img-hover-v1" target="_blank">
+              <img class="img-responsive loaded" src="https://inderaja.bmkg.go.id/IMAGE/HIMA/H08_EH_Indonesia.png?id=153017ub8jnmbiacu7mejs1" 
+              data-original="" style="width: 100%; height: 200px;" alt="Citra Satelit">
+          </a>
+        </div>
+          </div>
+          <div class="col-lg-3">
+            <h6 style="color: blue;">Prakiraan Tinggi Gelombang</h6>
+            <hr>
+            <div class="card">
+              <a href="https://cdn.bmkg.go.id/DataMKG/MEWS/maritim/gelombang_maritim.png?id=153017ub8jnmbiacu7mejs1"
+               title="Prakiraan Tinggi gelombang" class="fancybox" target="_blank" rel="gallery">
+                <img class="img-responsive loaded" src="https://cdn.bmkg.go.id/DataMKG/MEWS/maritim/gelombang_maritim.png?id=153017ub8jnmbiacu7mejs1" 
+                data-original="" style="width: 100%; height: 200px;" alt="Prakiraan Tinggi Gelombang">
+            </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h6 style="color: blue;">Prakiraan Angin</h6>
+            <hr>
+            <div class="card">
+              <a href="https://cdn.bmkg.go.id/DataMKG/MEWS/angin/streamline_d1.jpg?id=153017ub8jnmbiacu7mejs1" 
+              title="Prakiraan Angin" class="fancybox" target="_blank" rel="gallery">
+                <img class="img-responsive loaded" src="https://cdn.bmkg.go.id/DataMKG/MEWS/angin/streamline_d1.jpg?id=153017ub8jnmbiacu7mejs1" 
+                data-original="" style="width: 100%; height: 200px;" alt="Prakiraan Angin">
+            </a>
+          </div>
+          </div>
+          <div class="col-lg-3">
+            <h6 style="color: blue;">Potensi Kebakaran Hutan</h6>
+            <hr>
+            <div class="card">
+              <a href="https://cdn.bmkg.go.id/DataMKG/MEWS/fdrs/ina_ffmc00.jpg?id=153017ub8jnmbiacu7mejs1" 
+              title="Potensi Kebakaran Hutan" class="fancybox" target="_blank" rel="gallery">
+                <img class="img-responsive loaded" src="https://cdn.bmkg.go.id/DataMKG/MEWS/fdrs/ina_ffmc00.jpg?id=153017ub8jnmbiacu7mejs1" 
+                data-original="" style="width: 100%; height: 200px;" alt="Potensi Kebakaran Hutan">
+            </a>
+          </div>
+        </div>
+          <!-- End Informasi Cuaca -->
+        
+        </div>
+        </div>
+        </div>
+        </div>
+      </section>  <!-- End Section Content berita -->
+  </main><!-- End #main -->
+  <br>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="background-color:black">
+
+    <div class="footer-top " style="background-color: black;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-9 footer-contact">
+            <h3 class="text-white">BMKG</h3>
+            <p class="text-white">
+              Jalan Raya Wates Km.42 Bandara Internasional Yogyakarta <br>
+              Kulon Progo - D.I. Yogyakarta<br>
+              55282 <br><br>
+              <strong>Phone:</strong> +62 811 738 801<br>
+              <strong>Email:</strong>  <a href="mailto:stamet.yogya@bmkg.go.id">stamet.yogya@bmkg.go.id</a><br>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-9 footer-links">
+            <h4 class="text-white">Link BMKG</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Meteorologi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Perkiraan Cuaca DIY</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Peringatan Dini Cuaca</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Prakiraan Cuaca Maritim</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pelayanan Cuaca Penerbangan</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-9 footer-links">
+              <h3 class="text-white">Aplikasi Mobile</h3>
+              <h4>
+              <a class="text-white" href="http://apps.bmkg.go.id/" style="font-size: 20px;" rel="noopener">
+              Info BMKG - Cuaca, Iklim, dan Gempabumi Indonesia</a></h4>
+              <p class="text-white" style="font-size: 15pxx;">
+                Semua informasi mengenai Prakiraan Cuaca, Iklim, Kualitas Udara, dan 
+                Gempabumi yang terjadi di berbagai wilayah di Indonesia tercakup dalam satu aplikasi mobile.
+              </p>
+              <div class="row">
+                <div class="col-xs-6">
+                  <a href="https://itunes.apple.com/id/app/id1114372539?l=id" target="_blank">
+                  <img src="https://www.bmkg.go.id/asset/img/logo/appstore.png" alt="infoBMKG on App Store" 
+                  class="ic-fade-in" style="width: 30%; height: 40px;">
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.Info_BMKG" target="_blank">
+                    <img src="https://www.bmkg.go.id/asset/img/logo/googleplay.png" alt="infoBMKG on Google Play" 
+                    class="ic-fade-in" style="width: 30%; height: 40px;">
+                    </a>
+                </div>
+                <br>
+              </div>
+              <br>
+            <div class="social-links">
+              <a style="background-color: coral;" href="https://twitter.com/infoBMKG" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+              <a style="background-color: coral;" href="https://www.facebook.com/InfoBMKG" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a style="background-color: coral;" href="https://www.instagram.com/infobmkg/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+              <a style="background-color: coral;" href="http://youtube.com/infobmkg" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright text-white">
+        &copy; Copyright <strong><span> BMKG | Badan Meteorologi, Klimatologi, dan Geofisika 2021</span></strong>. All Rights Reserved
+      </div>
+      <!-- <div class="credits"> -->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div> -->
+    </div>
+ 
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/js/jquery.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+      });
+    });
+    </script>
+  <script>
+    var tw = new Date();
+    if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+    else (a=tw.getTime());
+    tw.setTime(a);
+    var tahun= tw.getFullYear ();
+    var hari= tw.getDay ();
+    var bulan= tw.getMonth ();
+    var tanggal= tw.getDate ();
+    var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+    var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+    document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+    </script>
+    
+
+</body>
+
+</html>
